@@ -6,9 +6,55 @@
     <title>CLB HƯƠNG SẮC NGHỆ THUẬT</title>
     <link rel="stylesheet" href="style/styles.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        :root {
+            --font-secondary: 'Montserrat', sans-serif;
+
+        }
+
         html {
             scroll-behavior: smooth;
         }
+        .background {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: url('https://vcnet.vn/upload/20893/20190917/0b973a516b2a143ee2955fa5f2743609.jpg') no-repeat center center / cover; /* Thêm ảnh nền */
+            color: var(--color-cadet); 
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        } 
+        .background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(187, 187, 187, 0.5);
+            z-index: 1;
+        }
+        .background h1, .background p, .background h2 {
+            position: relative;
+            z-index: 2;
+            font-family: var(--font-secondary);
+        }
+        .background h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            
+        }
+        .background h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: black;
+            
+
+            
+        }
+        .background p {
+            font-size: 1.5rem;
+            color: rgb(0, 0, 0);
+        } 
     </style>
 </head>
 <body>
@@ -24,11 +70,13 @@
     </nav>
 
     <!-- Section Giới thiệu -->
-    <section id="intro" class="intro-section">
+    <section id="intro" class="content-section">
         <div class="container">
-            <h1>CLB HƯƠNG SẮC NGHỆ THUẬT</h1>
-            <h2>Trường THPT Võ Nguyên Giáp</h2>
-            <p>Câu lạc bộ <strong><em> Hương Sắc Nghệ Thuật</em></strong> là một không gian sáng tạo dành cho những người yêu thích và đam mê các bộ môn nghệ thuật như <em><strong>hát, nhảy, vẽ</strong></em>. Với sứ mệnh kết nối những tâm hồn nghệ thuật, câu lạc bộ không chỉ là nơi để rèn luyện kỹ năng mà còn là nơi giao lưu, chia sẻ và phát triển bản thân.</p>
+            <div class="background">
+                <h1>CLB HƯƠNG SẮC NGHỆ THUẬT</h1>
+                <h2>Trường THPT Võ Nguyên Giáp</h2>
+                <p>Câu lạc bộ <strong><em> Hương Sắc Nghệ Thuật</em></strong> là một không gian sáng tạo dành cho những người yêu thích và đam mê các bộ môn nghệ thuật như <em><strong>hát, nhảy, vẽ</strong></em>. Với sứ mệnh kết nối những tâm hồn nghệ thuật, câu lạc bộ không chỉ là nơi để rèn luyện kỹ năng mà còn là nơi giao lưu, chia sẻ và phát triển bản thân.</p>
+            </div>
         </div>
     </section>
 

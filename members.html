@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành Viên</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .center {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr)); /* Mặc định 3 cột */
+            gap: 20px;
+            margin-top: 80px;
+            padding: 0 20px;
+        }
+        @media (max-width: 1024px) {
+            .center {
+                grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 cột */
+            }
+        }
+
+        /* Điều chỉnh cho màn hình nhỏ (mobile) */
+        @media (max-width: 768px) {
+            .center {
+                grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 cột */
+            }
+        }
+
+        .article-card {
+        width: 100%; /* Để card tự co giãn theo cột */
+        max-width: 350px;
+        height: auto;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 300ms;
+        }
+
+        .article-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .article-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .article-card .content {
+        box-sizing: border-box;
+        width: 100%;
+        position: absolute;
+        padding: 30px 20px 20px 20px;
+        height: auto;
+        bottom: 0;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+        }
+
+
+        .article-card .title {
+        margin: 0;
+        }
+
+
+
+        .article-card .title {
+        font-size: 17px;
+        color: #ffffff;
+        }
+
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            
+            grid-auto-flow: column;
+            place-content: center;
+            background: #cbd5e0;
+        }
+     
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html#intro">Trang chủ</a></li>
+            <li><a href="../index.html#singing">Hát</a></li>
+            <li><a href="../index.html#dancing">Nhảy</a></li>
+            <li><a href="../index.html#drawing">Vẽ</a></li>
+            <li><a href="members.html">Thành Viên</a></li>
+        </ul>
+    </nav>
+    
+    <div class="center">
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Phạm Thị Quyên</p>
+                <p class="title">Trưởng nhóm</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Bùi Lâm Thông</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Hà Văn Vỹ</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Nguyễn Thị Khánh Huyền</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Phan Nguyễn Quỳnh Như</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Nguyễn Vũ Như Thảo</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+>
+                <p class="title">Trần Thị Kim Thoa</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Trương Nguyễn Kiều Vy</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Huỳnh Tô Văn Bảo</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Trần Mai Diệu</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Lê Châu Thành Tài</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+        <div class="article-card">
+            <div class="content">
+
+                <p class="title">Trần Hoài Thịnh</p>
+                <p class="title">Thành viên</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="article-cover" />
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="copyright-footer">
+        <div class="footer-content">
+          &copy; 2025 Bản quyền thuộc về Tài
+        </div>
+    </footer>
+</body>
+</html>
