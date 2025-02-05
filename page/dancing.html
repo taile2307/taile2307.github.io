@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhảy</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+        :root {
+            --font-primary: 'Abril Fatface', cursive;
+            --font-secondary: 'Montserrat', sans-serif;
+            --font-size-small: 0.875em;
+            --color-cadet: #4f6d7a;
+            --color-maximum-blue: #5ea5b8;
+            --color-body-text: #444444;
+            --color-background: #eaeaea;
+        }
+
+        body {
+            background-color: var(--color-background);
+            font-family: var(--font-secondary);
+            font-size: var(--font-size-small);
+            color: var(--color-body-text);
+            line-height: 1.5;
+        }
+
+        .content-section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        dl {
+            counter-reset: count;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.04) 20%, rgba(255, 255, 255, 0) 0%);
+            padding: 4vw;
+            margin: 0;
+        }
+
+        dt {
+            counter-increment: count;
+            color: var(--color-cadet);
+            font-family: var(--font-secondary);
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        dt::before {
+            content: counter(count, decimal-leading-zero) ".";
+            font-family: var(--font-primary);
+            color: var(--color-maximum-blue);
+            margin-left: -1vw;
+            padding-right: 12px;
+        }
+
+        dd {
+            margin-left: 2vw;
+            margin-bottom: 2vh;
+        }
+        h2 {
+            font-family: var(--font-primary);
+            color: var(--color-maximum-blue);
+            font-size: 2.5rem;
+            margin-bottom: 2vh;
+        }
+        h1{
+            font-family: var(--font-primary);
+            color: var(--color-maximum-blue);
+            font-size: 3rem;
+            margin-bottom: 2vh;
+        }
+        p{
+            font-family: var(--font-secondary);
+            color: var(--color-body-text);
+            font-size: 1.5rem;
+            margin-bottom: 2vh;
+        }
+        .background {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://file1.dangcongsan.vn/data/0/images/2024/08/20/upload_2675/456230412-2874002572776046-1285680524346504760-n.jpg') no-repeat center center / cover; /* Thêm ảnh nền */
+            color: var(--color-cadet); 
+            position: relative;
+        } 
+        .background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(71, 71, 71, 0.5);
+            z-index: 1;
+        }
+        .background h1, .background p {
+            position: relative;
+            z-index: 2;
+        }
+        .background h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .background p {
+            font-size: 1.5rem;
+            color: rgb(0, 0, 0);
+        }   
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html#intro">Trang chủ</a></li>
+            <li><a href="../index.html#singing">Hát</a></li>
+            <li><a href="../index.html#dancing">Nhảy</a></li>
+            <li><a href="../index.html#drawing">Vẽ</a></li>
+            <li><a href="members.html">Thành Viên</a></li>
+        </ul>
+    </nav>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="background">
+                <h1>NHẢY – Tận hưởng từng nhịp điệu sôi động</h1>
+                <p>Nhảy múa là sự kết hợp giữa nghệ thuật và thể thao, giúp cơ thể linh hoạt, giải tỏa căng thẳng và truyền tải cảm xúc qua từng động tác. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Mục Tiêu</h2>
+            <dl>
+                <dt>Phát triển kỹ năng vũ đạo</dt>
+                <dd>Học từ cơ bản đến nâng cao, cải thiện khả năng kiểm soát cơ thể và cảm nhạc.</dd>
+                <dt>Tăng cường sức khỏe và sự dẻo dai</dt>
+                <dd>Giúp cơ thể linh hoạt, nâng cao thể lực và sức bền.</dd>
+                <dt>Rèn luyện phong cách biểu diễn</dt>
+                <dd> Giúp thành viên tự tin trên sân khấu, giao lưu và kết nối với khán giả.</dd>
+            </dl>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Các Hoạt Động Chính</h2>
+            <dl>
+                <dt>Lớp Học và Đào Tạo Vũ Đạo</dt>
+                <dd>Hip-hop – Mạnh mẽ, cá tính.</dd>
+                <dd>Dance Cover – Hiện đại, theo xu hướng K-pop, US-UK.</dd>
+                <dd>Múa Đương Đại – Mềm mại, đầy cảm xúc.</dd>
+                <dt>Thực Hành Biểu Diễn</dt>
+                <dd>Tham gia các buổi tập luyện nhóm để nâng cao kỹ năng trình diễn.</dd>
+                <dd>Tổ chức các buổi biểu diễn nội bộ, giao lưu nghệ thuật.</dd>
+                <dd>Hỗ trợ thành viên tự tin thể hiện tài năng trên sân khấu.</dd>
+                <dt>Cuộc Thi & Giao Lưu Nghệ Thuật</dt>
+                <dd>Tham gia các cuộc thi nhảy nội bộ và bên ngoài.</dd>
+                <dd>Giao lưu với vũ công chuyên nghiệp, học hỏi kinh nghiệm.</dd>
+                <dd>Biểu diễn tại các sự kiện nghệ thuật, văn hóa.</dd>
+
+            </dl>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="image-gallery">
+                <img src="../img/dance3.jpg" alt=""> <!--/img/dance3.jpg-->
+                <img src="../img/dance4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="copyright-footer">
+        <div class="footer-content">
+            &copy; 2025 Bản quyền thuộc về Tài
+        </div>
+    </footer>
+</body>
+</html>
